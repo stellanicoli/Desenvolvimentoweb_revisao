@@ -1,0 +1,147 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Revisão  HTML/CSS/JS</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<header>
+  <h1>Revisão - Nome Completo</h1>
+  <body onload="atualizaNome()">
+</header>
+
+<main>
+
+  <aside>
+    <h3>Informações</h3>
+    <ul>
+      <li>Seu código deverá estar limpo, legível, corretamente identado e muito bem estruturado;</li>
+      <li>As questões de JavaScript 1 e 3 deverão ser feitas no arquivo <code>main.js</code>;</li>
+      <li>A questão 4 de CSS deverá ser feita no arquivo <code>style.css</code>;</li>
+      <li>Renomeie a pasta do projeto web  para o seguinte formato: nome_sobrenome_RA;</li>
+      <li>Poste a pasta do projeto zipada no ulife</li>
+    </ul>
+    <h3>Links Úteis</h3>
+    <ul>
+      <li><a href="https://w3schools.com" target="_blank">w3schools</a></li>
+      <li><a href="https://github.com/rwaldron/idiomatic.js/" target="_blank">Idiomatic.js</a></li>
+      <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">MDN Web Docs</a></li>
+    </ul>
+  </aside>
+
+  <div id="container">
+
+    <section>
+      <header>
+        <h3>Questão 1</h3>
+      </header>
+      <p>
+        Implemente no arquivo <code>main.js</code> a função <code>atualizaNome();</code> que adiciona
+        o seu nome completo no elemento <code>title</code> e no elemento <code>h1</code> do cabeçalho
+        desta página Web. Além disso, essa função deverá alterar a cor da fonte do
+        elemento <code>h1</code> do cabeçalho para <code>#A01D26</code>.
+      </p>
+    </section>
+
+    <section>
+      <header>
+        <h3>Questão 2</h3>
+      </header>
+      <p>
+        Crie o arquivo HTML <code>user.html</code> para
+        o projeto de interface abaixo, em seguida, adicione um link para ele
+        aqui ⟶ <a href="user.html" target="_blank">User Html</a> ⟵ com o
+        nome User e que abra em uma nova guia ou aba do navegador.
+        Você deverá implementar apenas o código HTML, e ser o mais semântico
+        possível em sua solução, ou seja, utilize as TAGs HTML que julgar
+        ser a melhor escolha possível para estruturar o conteúdo da figura abaixo.
+      </p>
+      <div class="content">
+        <img src="img/wyre_dark101_user.svg" alt="">
+      </div>
+    </section>
+    <section>
+      <header>
+        <h3>Questão 3</h3>
+      </header>
+      <p>
+        No arquivo <code>main.js</code>, escreva um programa JavaScript
+        que calcule o quadrado do número fornecido pelo usuário após ele clicar
+        no botão calcular.
+      </p>
+      <div class="content">
+        <form action="">
+          <div class="input-group">
+            <label for="numero-1">Número</label>
+            <input id="valor-numerico" name="numero" type="text" value="" autofocus tabindex="1" />
+          </div>
+
+          <div class="input-group">
+            <label for="resultado">Resultado</label>
+            <input id="resultado" name="resultado" type="text" value="" readonly />
+          </div>
+
+          <div class="input-group">
+            <button type="button" name="botao-calculo" tabindex="2" onclick="calculo()">Calcular</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+    <section>
+      <header>
+        <h3>Questão 4</h3>
+      </header>
+      <p>
+        Adicione 4 elementos <code>div</code> dentro do elemento <code>div</code>
+        com a classe <code>wrapper</code> abaixo; e crie regras css no arquivo
+        <code>style.css</code> da seguinte forma:
+      </p>
+      <ul class="lista-questao-4 input-group">
+        <li>
+          Escrevas regras de estilo para que a classe <code>wrapper</code>
+          utilize a técnica <code>display flex</code>, com todos os elementos
+          justificados no centro e o fluxo no formato linha;
+        </li>
+        <li>
+          Todos os elementos <code>div</code> dentro de <code>wrapper</code>,
+          deverão ter enchimento de 4px e margem de 12px;
+        </li>
+        <li>
+          <span>Primeiro Elemento: </span> largura = 100px; altura = 50px;
+          borda sólida, na cor #C99E10 e expessura de 4px;
+        </li>
+        <li>
+          <span>Segundo Elemento: </span> largura = 100px; altura = 100px;
+          cantos arredondados = 50px e cor do plano de fundo = #1E434C;
+        </li>
+        <li>
+          <span>Terceiro Elemento: </span> largura = 0; altura = 0; enchimento = 0;
+          borda esquerda = 50px, sólida, cor = transparent; borda
+          direita = 50px, sólida, cor = transparent; borda
+          inferior = 100px, sólida, cor = #9B4F0F;
+        </li>
+        <li>
+          <span>Quarto Elemento: </span> largura = 100px; altura = 50px;
+          cantos arredondados = 50% e plano de fundo = #8D230F.
+        </li>
+      </ul>
+      <div class="wrapper">
+        <!-- Adicione aqui os elementos HTML desta questão. -->
+      </div>
+    </section>
+
+  </div>
+</main>
+<script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
